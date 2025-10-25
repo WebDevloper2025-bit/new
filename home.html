@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo" data-lang="logo">MEBRATU</a>
+    <nav class="navbar">
+      <a href="#home" style="--i:1" data-lang="navHome">Home</a>
+      <a href="#about" style="--i:2" data-lang="navAbout">About</a>
+      <a href="#services" style="--i:3" data-lang="navServices">Services</a>
+      <a href="#contact" style="--i:4" data-lang="navContact">Contact</a>
+    </nav>
+
+    <!-- Language Switch -->
+    <div class="lang-switch">
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('am')">AM</button>
+      <button onclick="setLanguage('om')">OM</button>
+      <button onclick="setLanguage('ti')">TI</button>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3 data-lang="hello">Hello, It's Me</h3>
+      <h1>MEBRATU</h1>
+      <h3>And I'm a <span class="text" data-lang="iam">Web Developer,Digital Marketer, Video Editor</span></h3>
+      <p data-lang="intro">
+        As a 3rd year Information Systems student at the University of Gondar,
+        I combine academic knowledge with 2 years of practical experience in web design,
+        frontend development, and creating user-centric digital experiences.
+      </p>
+      <div class="home-sci">
+        <a href="https://web.facebook.com/profile.php?id=61582763043673" style="--i:7"><i
+            class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/3m8507/" style="--i:8"><i class='bx bxl-instagram'></i></a>
+        <a href="https://t.me/OMG3M" style="--i:9"><i class='bx bxl-telegram'></i></a>
+        <a href="https://www.youtube.com/@AITUBE-z1n" style="--i:11"><i class='bx bxl-youtube'></i></a>
+        <!-- New YouTube Icon -->
+      </div>
+      <a href="#about" class="btn-box" data-lang="moreBtn">More About Me</a>
+    </div>
+  </section>
+
+<br>
+<br>
+<br>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="mebratu.jpg" alt="Mebratu">
+    </div>
+    <div class="about-text">
+      <h2><span data-lang="aboutTitle">About Me</span></h2>
+      <h4 data-lang="role">Web Developer</h4>
+      <p data-lang="aboutDesc">
+        I’m a 3rd-year Information System Student at the <br> University of Gondar,
+        passionately pursuing expertise in <br> Website development.<br>
+        My goal is to build responsive, user-friendly web applications <br>
+        that solve real-world problems.
+      </p>
+      <div class="home-sci">
+        <a href="https://web.facebook.com/profile.php?id=61582763043673" style="--i:7"><i
+            class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/3m8507/" style="--i:8"><i class='bx bxl-instagram'></i></a>
+        <a href="https://t.me/OMG3M" style="--i:9"><i class='bx bxl-telegram'></i></a>
+        <a href="https://www.youtube.com/@AITUBE-z1n" style="--i:11"><i class='bx bxl-youtube'></i></a>
+        <!-- New YouTube Icon -->
+      </div>
+      <a href="#services" class="btn-box" data-lang="moreBtn">More About Me</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <h1 class="sub-title" data-lang="servicesTitle">My <span>Services</span></h1>
+      <div class="services-list">
+        <div>
+          <i class='bx bx-code'></i>
+          <h2 data-lang="service1">Website Development</h2>
+          <p data-lang="service1Desc"> Responsive, scalable websites with clean code and modern frameworks.
+            I design and develop web solutions that work perfectly across all devices,
+            with a focus on performance, scalability, and maintainability.</p>
+        </div>
+        <div>
+          <i class='bx bx-video'></i>
+          <h2 data-lang="service2">Video Editing</h2>
+          <p data-lang="service2Desc"> Video editing services for social media with effects and graphics.
+            I create professional, engaging videos designed for platforms like YouTube, TikTok, Instagram, and Facebook.
+            Services.</p>
+        </div>
+        <div>
+          <i class='bx bx-line-chart'></i>
+          <h2 data-lang="service3">Digital Marketing</h2>
+          <p data-lang="service3Desc"> Social media marketing and SEO to boost your online presence.
+            I create strategies that attract the right audience, improve search engine rankings,
+            and build brand authority across multiple platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2 data-lang="contactTitle">Contact <span>Me</span></h2>
+      <p data-lang="contactDesc">I will get back to you as soon as possible.</p>
+      <ul>
+        <li>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Muhabawmebratu15@gmail.com" class="btn">
+            <i class='bx bxs-send'></i> Contact Me
+          </a>
+        </li>
+        <li>
+          <a href="tel:+251991215273" class="btn">
+            <i class='bx bxs-phone'></i> +251 991 215 273
+          </a>
+        </li>
+      </ul>
+
+
+
+    </div>
+
+    <div class="contact-form">
+      <form enctype="multipart/form-data">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+
+        <!-- File Upload -->
+        <input type="file" id="fileUpload" name="fileUpload" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" />
+
+        <!-- Voice Recording -->
+        <br>
+        <br>
+        <br>
+
+        <button type="button" id="recordBtn" class="send" data-lang="recordBtn">🎤 Record Message</button>
+        <audio id="audioPlayback" controls style="display:none; margin-top:10px;"></audio>
+
+        <button type="submit" class="send">Submit</button>
+      </form>
+    </div>
+
+  </section>
+
+  <div id="digital-clock"></div>
+  <br>
+  <br>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+
+      <p>&copy; 2025 MEBRATU | All Rights Reserved</p>
+
+      <!-- Quick Links -->
+      <ul class="footer-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Social Media -->
+      <div class="social-links">
+        <span>Follow Me:</span>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-telegram'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+
+
+
+      </div>
+
+      <!-- Contact -->
+      <p class="email">📧 <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=Muhabawmebratu15@gmail.com">Muhabawmebratu15@gmail.com </a>
+      </p>
+      <p>📞 <a href="tel:+251991215273">+251 991 215 273</a></p>
+
+      <!-- Back to Top -->
+      <a href="#home" class="back-to-top"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="home.js"></script>
+</body>
+
+</html>
